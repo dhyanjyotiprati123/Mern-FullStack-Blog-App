@@ -1,0 +1,103 @@
+// navbar
+
+.link{
+    text-decoration: none;
+    font-size:2rem;
+    color: black;
+    border: 2px solid $body-clr;
+    @include Box_shad;
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+}
+
+.Link{
+    text-decoration: none;
+    color: inherit;
+}
+
+// headings
+
+.main-heading{
+    font-size: 4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.sub-heading{
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: lightseagreen;
+}
+
+.heading-3{
+    font-size: 2.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.heading-4{
+    font-size: 2.3rem;
+    color: $font-green;
+    text-transform: capitalize;
+}
+
+.heading-5{
+    font-size: 2rem;
+    color: #F8485E;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.para{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// inputs
+
+.input{
+    border: none;
+    background: transparent;
+    padding: 1.5rem;
+    @include shadow-in;
+    border-radius: 5px;
+    width: 30rem;
+
+    &:focus{
+        outline: 1px solid rgba(0,0,0, .5);
+        border-radius: 5px;
+    }
+}
+
+// buttons
+
+.btn{
+   border-radius: 3rem;
+   border: 2px solid $body-clr;
+   padding: 1rem 1.5rem;
+   background: transparent;
+   @include shadow-in;
+   text-transform: capitalize;
+   font-size: 1.7rem;
+   font-weight: 500;
+   @include Flex;
+   gap: 5px;
+   cursor: pointer;
+}
+
+// error page
+
+.error{
+    width: 100%;
+    min-height: 95vh;
+    &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,47 @@
+.single{
+    width: 100%;
+    @include Flex;
+    margin : 3rem 0 0 0;
+
+    &-inner{
+        width: 70%;
+        border: 3px solid $body-clr;
+        border-radius: 2rem;
+        padding: 2rem;
+        @include Box_shad;
+    }
+    &-figure{
+        width: 100%;
+        padding: 1rem;
+    }
+    &-pic{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-info{
+        padding: 2rem 4rem;
+        border: 2px solid $body-clr;
+        border-radius: 5rem;
+        @include Box_shad;
+        @include Flex-gap;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    &-controls{
+        padding: 3rem 0;
+        @include Flex;
+        gap: 3rem;
+    }
+
+    &-des{
+        width: 80%;
+        margin: 0 auto;
+        padding: 3rem 0;
+    }
+    &-author{
+        margin-top: 3rem;
+        text-align: center;
+    }
+}

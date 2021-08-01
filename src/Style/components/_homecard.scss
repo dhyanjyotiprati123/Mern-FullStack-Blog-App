@@ -1,0 +1,33 @@
+
+.homecard{
+    padding: 1rem;
+    width: 30rem;
+    @include shadow-up;
+    border-radius: 1rem;
+
+    &-figure{
+        width: 100%;
+        padding: 1rem;
+    }
+    &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    &-info{
+        margin-top: 2rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    &-control{
+        padding: 1rem 0;
+        @include Flex;
+    }
+    &-para{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}

@@ -1,0 +1,31 @@
+
+@mixin Box_shad {
+    box-shadow: 8px 8px 10px rgba(0,0,0, .15),
+               -8px -8px 10px rgba(255,255,255, .2),
+               inset -8px -8px 10px rgba(255,255,255, .2),
+               inset 8px 8px 10px rgba(0,0,0, .15);
+}
+
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin Flex-gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@mixin shadow-up {
+    box-shadow: 4px 4px 8px rgba(0,0,0, .15),
+                 -4px -6px 8px rgba(255,255,255, .2);
+}
+
+@mixin shadow-in {
+    box-shadow: inset 4px 4px 8px rgba(0,0,0, .15),
+                inset -4px -6px 8px rgba(255,255,255, .2);
+}

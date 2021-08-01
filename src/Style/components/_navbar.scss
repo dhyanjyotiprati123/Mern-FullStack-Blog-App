@@ -1,0 +1,40 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+
+    &-logo{
+        width: 6rem;
+        height: 6rem;
+        border: 3px solid $body-clr;
+        border-radius: 50%;
+        @include Box_shad;
+        @include Flex;
+        font-size: 3rem;
+        color: black;
+        font-style: italic;
+        font-weight: 900;
+    }
+
+    &-list{
+        list-style: none;
+        @include Flex;
+        gap: 3rem;
+    }
+    &-control{
+        @include Flex;
+        gap: 5rem;
+    }
+    &-item{
+        background: cadetblue;
+        padding: 1rem 1.5rem;
+        border-radius: 3rem;
+    }
+    &-link{
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: white;
+        @include Flex;
+        gap: 1rem;
+    }
+}

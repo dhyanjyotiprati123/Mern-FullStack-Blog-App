@@ -1,0 +1,15 @@
+
+.home{
+    padding: 3rem 0;
+
+    &-main{
+        text-align: center;
+        padding: 3rem 0 0 0;
+  }
+  &-hero{
+    margin-top: 3rem;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem , 1fr));
+  }
+}

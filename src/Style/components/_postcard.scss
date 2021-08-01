@@ -1,0 +1,33 @@
+
+.card{
+    width: 35rem;
+    @include Box_shad;
+    border:  2px solid $body-clr;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    &-title{
+        font-size: 2.3rem;
+        color: $font-green;
+        text-transform: capitalize;
+        font-family: inherit;
+        font-weight: 600;
+        font-style: italic;
+    }
+    &-para{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    &-figure{
+        width: 100%;
+    }
+    &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
